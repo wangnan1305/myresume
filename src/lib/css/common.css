@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.hidden {
+  visibility: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  outline: none;
+}
+
+figure {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.book {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: middle;
+}
+button {
+  outline: none;
+}
+input {
+  outline: none;
+}

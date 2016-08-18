@@ -1,0 +1,34 @@
+@media screen and (min-width: 351px) {
+  .latestBook .name .book {
+    max-width: 61%;
+  }
+}
+
+/*模拟自适应*/
+@media screen and (min-width: 361px) and (max-width: 400px) {
+  .fig a {
+    width: 97px;
+  }
+  .fig img {
+    width: 87px;
+    height: 116px;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 760px) {
+  .fig a {
+    width: 109px;
+  }
+  .fig img {
+    width: 99px;
+    height: 132px;
+  }
+}
+@media screen and (min-width: 761px) {
+  .fig a {
+    width: 219px;
+  }
+  .fig img {
+    width: 209px;
+    height: 279px;
+  }
+}
