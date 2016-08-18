@@ -2,9 +2,11 @@
 
 Read resume data from a JS file named data.js and generate a static web page. You can Deploy GitHub Pages 
 
-**Notice: data.js is the same as the data format returned form the server**
+data.js is the same as the data format returned form the server
 
 Written with Backbone, EJS, Less, and Gulp.
+
+## **Notice: Please your Computer has been installed the node ! if not,please click [this](https://nodejs.org/en/) to install**
 
 # Build
 
