@@ -1,12 +1,12 @@
 # My Resume
 
-Read resume data from a JS file named data.js and generate a static web page. You can Deploy GitHub Pages 
+Read resume data from a JS file named data.js and generate a static web page. You can Deploy GitHub Pages.
 
-data.js is the same as the data format returned form the server
+data.js is the same as the data format returned form the server.
 
 Written with Backbone, EJS, Less, and Gulp.
 
-## **Notice: Please make sure your Computer has been installed the node ! if not,please click [this](https://nodejs.org/en/) to install**
+## **Notice: Please make sure your Computer has been installed the node ! if not,please click [this](https://nodejs.org/en/) to install.**
 
 # Build
 
@@ -19,4 +19,4 @@ Written with Backbone, EJS, Less, and Gulp.
 
 * **Make sure port 35729(for livereload) and 4300(for the local server) are available.**
 * **Run gulp, then visit http://localhost:4300.**
-* **Start development!**
+* **Start development!.**
