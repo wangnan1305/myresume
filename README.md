@@ -6,7 +6,7 @@ data.js is the same as the data format returned form the server
 
 Written with Backbone, EJS, Less, and Gulp.
 
-## **Notice: Please your Computer has been installed the node ! if not,please click [this](https://nodejs.org/en/) to install**
+## **Notice: Please make sure your Computer has been installed the node ! if not,please click [this](https://nodejs.org/en/) to install**
 
 # Build
 
