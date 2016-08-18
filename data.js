@@ -8,7 +8,7 @@ var data = [
 				phone:"13797079445",
 				qq:"453261940",
 				email:"453261940@qq.com",
-				github:"https://github.com/wssgcg1213",
+				github:"https://github.com/wangnan1305",
 				blog:"http://wangnan1305.github.io/"
 			}
 		]
