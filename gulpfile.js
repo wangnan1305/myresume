@@ -39,15 +39,6 @@ var _less_dir = ["src/less/*.less"]; //less文件路径
 var _css_dist_dir = "dist/css/";//css导出目录
 var _css_min_name = "app.min.css";//压缩后的css名称
 
-/* 图片文件 */
-var _images_dir = [
-	"src/images/*",
-	"src/images/*/*",
-	"src/data/images/*"
-];
-
-var _images_dist_dir = "dist/";//图片导出目录
-
 /* html */
 var _html_dir = [
 	"src/*.html"
@@ -117,10 +108,6 @@ gulp.task("jsTask",function(){
 //html转移任务
 gulp.task("htmlTask",function(){
 	console.log("开始执行html和静态文件转移任务");
-
-	gulp.src(_images_dir,{base:"src"})
-	.pipe(gulp.dest(_images_dist_dir));//处理得到的image文件发布到对应目录
-
 	//html
 	gulp.src(_html_dir)
 	.pipe(gulp.dest(_html_dist_dir));//处理得到的html文件发布到对应目录
