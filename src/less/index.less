@@ -1,6 +1,29 @@
 @import url(define.less);
-
+// ie8
+.ie8-wrapper{
+	height: 100%;
+	text-align: center;
+	background: #008080;
+}
+.ie8-wrapper:after{
+	content: '';
+	height: 100%;
+	vertical-align: middle;
+	display: inline-block;
+}
+.ie8{
+	color:#fff;
+	font-size: 28px;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	display: inline-block;
+}
+.ie8 a{
+	color:#ee8781;
+}
+// 
+html{height: 100%}
 body{
+	height: 100%;
 	background-color: @body_base_color;
     font-family: lucida grande,lucida sans unicode,lucida,helvetica,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
 }
