@@ -4,21 +4,22 @@
 	height: 100%;
 	text-align: center;
 	background: #008080;
-}
-.ie8-wrapper:after{
-	content: '';
-	height: 100%;
-	vertical-align: middle;
-	display: inline-block;
-}
-.ie8{
-	color:#fff;
-	font-size: 28px;
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	display: inline-block;
-}
-.ie8 a{
-	color:#ee8781;
+	&:after{
+		content: '';
+		height: 100%;
+		vertical-align: middle;
+		display: inline-block;
+	};
+	.ie8{
+		color:#fff;
+		font-size: 28px;
+		font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		display: inline-block;
+		a{
+			color:#ee8781;
+			font-weight: 700
+		}
+	}
 }
 // 
 html{height: 100%}
