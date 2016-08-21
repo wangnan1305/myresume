@@ -98,7 +98,7 @@ gulp.task("jsTask",function(){
 
 	gulp.src(_js_dir)
 	.pipe(concat(_js_min_name))//合并js
-	// .pipe(uglify())//压缩混淆
+	.pipe(uglify())//压缩混淆
 	.on("error",function(error){
 		console.log("压缩js报错:",error);
 	})//报错忽略
