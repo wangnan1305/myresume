@@ -73,6 +73,13 @@ a:hover {
     padding: 15px;
   }
 }
+@media screen and (max-width: 480px) {
+  .resume_container {
+    width: 100%;
+    margin: 0;
+    padding: 15px 15px 15px 8px;
+  }
+}
 ul.list-item li {
   padding-left: 28px;
   line-height: 1.4;
