@@ -1,7 +1,5 @@
 $(function(){
 	//
-	console.log("index");
-
 	//主事件监听
 	var mediator = {};
 	_.extend(mediator,Backbone.Events);
@@ -111,7 +109,6 @@ $(function(){
 					this.leftBlock.append(this.drawItemView(item["module"], item["data"] || "").render().el);
 				}
 				if(item["module"] === "skill"){
-					console.log(item["data"])
 					this.rightBlock.append(this.drawItemView(item["module"], item["data"] || "").render().el);
 				}
 			}, this);
@@ -205,5 +202,4 @@ $(function(){
 	var router = new Router();//路由
 	//路由开始
 	var history = Backbone.history.start();
-	console.log("history:",history);
 });
