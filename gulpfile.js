@@ -77,7 +77,7 @@ gulp.task("watch",function(){
 
 //编译less为css
 gulp.task("less",function () {
-	console.log("开始编译less");
+	console.log("开始编译less")
 	gulp.src(_less_dir)
 	.pipe(less())
 	.pipe(gulp.dest('src/css'))
