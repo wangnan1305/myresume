@@ -18,7 +18,11 @@ var data = [
 		data:[
 			{
 				university:"武汉理工大学",
-				graduation:"本科（2013-2017）"
+				graduation:"本科（2013-2017）",
+				description:"计算机学院 / 计算机科学与技术专业",
+				honor:[
+						"校优秀共青团干部"
+				]
 			}
 		]
 	},

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>王楠的个人简历</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
@@ -39,8 +39,10 @@
 		</div>
 		<ul class="list-item">
 			<li class="two-title"><h3><%= data[0]['university'] %></h3><%= data[0]['graduation'] %></li>
-			<li class="indent">计算机学院 / 计算机科学与技术专业</li>
-			<li class="indent">校优秀共青团干部</li>
+			<li class="indent"><%= data[0]['description'] %></li>
+			<% for(var i = 0;i<data[0]['honor'].length;i++) {%>
+				<li class="indent"><%= data[0]['honor'][i] %></li>
+			<% } %>
 		</ul>
 
 	</script>
@@ -87,31 +89,20 @@
 			<div class="underline"></div>
 		</div>
 		<ul class="list">
-			<li class="two-title"><h3><%= data[0]['title'] %></h3></li>
-			<% for(var i = 0;i<data[0]['data'].length;i++){ %>
-				<li class="timeline-item skill-description">
-					<ul class="list-item">
-						<h3 class="skill-title"><%= data[0]['data'][i]['title']%></h3>
-						<% for(var j = 0;j<data[0]['data'][i]['description'].length;j++){ %>
-							<li><%= data[0]['data'][i]['description'][j] %></li>
-						<% } %>
-					</ul>
-				</li>
+			<% for(var h = 0;h<data.length;h++){%>
+				<li class="two-title"><h3><%= data[h]['title'] %></h3></li>
+				<% for(var i = 0;i<data[h]['data'].length;i++){ %>
+					<li class="timeline-item skill-description">
+						<ul class="list-item">
+							<h3 class="skill-title"><%= data[h]['data'][i]['title']%></h3>
+							<% for(var j = 0;j<data[h]['data'][i]['description'].length;j++){ %>
+								<li><%= data[h]['data'][i]['description'][j] %></li>
+							<% } %>
+						</ul>
+					</li>
+				<% } %>
 			<% } %>
 			
-			<li class="two-title"><h3><%= data[1]['title'] %></h3></li>
-			<% for(var i = 0;i<data[1]['data'].length;i++){ %>
-				<li class="timeline-item skill-description">
-					<ul class="list-item">
-						<h3 class="skill-title">
-							<span><%= data[1]['data'][i]['title']%></span>
-						</h3>
-						<% for(var j = 0;j<data[1]['data'][i]['description'].length;j++){ %>
-							<li><%= data[1]['data'][i]['description'][j] %></li>
-						<% } %>
-					</ul>
-				</li>
-			<% } %>
 		</ul>
 	</script>
 	<!-- 简历主体div -->
